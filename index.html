@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Scenary</title>
+  </head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: sans-serif;
+      font-style: italic;
+      font: bold;
+    }
+    .bg {
+      background-image: url("https://previews.123rf.com/images/artist-ka/artist-ka1110/artist-ka111000020/11882807-forest-landscape-with-animals-in-summer.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: auto;
+      padding: 10px;
+    }
+    p {
+      color: blue;
+    }
+    option {
+      font-style: italic;
+    }
+    select {
+      height: 50%;
+      width: 25%;
+      border-color: black;
+      border-style: bold;
+    }
+  </style>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/b5296b35e3.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <div class="bg">
+      <h1 style="text-align: center; color: blue; font-style: italic">
+        <i class="fa-solid fa-cloud-sun fa-2xl" style="color: #ffe642"></i
+        ><b>Animal Facts</b>
+      </h1>
+      <div
+        style="
+          text-align: center;
+          vertical-align: middle;
+          align-content: center;
+          margin-top: 300px;
+        "
+      >
+        <label for="animal"><b>Choose animal</b></label>
+        <select id="animal" name="animal" onchange="loadTemperature()">
+          <option>Giraffe</option>
+          <option>Elephant</option>
+          <option>Tiger</option>
+        </select>
+        <p id="animalfactdisplay"></p>
+      </div>
+    </div>
+  </body>
+</html>
